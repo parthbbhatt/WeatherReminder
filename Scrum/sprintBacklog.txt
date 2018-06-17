@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1 :
+NAME     : Figure out UI
+OWNER    : Parth, Anthony, Stan
+PRIORITY : High
+ESTIMATE : 1hr
+AS A     : user
+I WANT   : To be able to have an easy to learn UI
+SO THAT  : I can navigate efficiently utilize the app
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2 :
+NAME     : Implement Google maps api and add a location saver
+OWNER    : 
+PRIORITY : 
+ESTIMATE : 
+AS A     : user
+I WANT   : To select a location
+SO THAT  : I can everytime I leave from this location, it will remind me
+the weather forecast a few hours in advance.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3 :
+NAME     : Implement weather forecast api
+OWNER    : 
+PRIORITY : 
+ESTIMATE : 
+AS A     : user
+I WANT   : To be able to have access of the full weather forecast
+SO THAT  : I can have the option to be aware of the weather throughout the
+day, week, and month
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4 :
+NAME     : Extract weather data and notify the user when outside the radius
+OWNER    : 
+PRIORITY : 
+ESTIMATE : 
+AS A     : user
+I WANT   : To be notified of the weather when I leave a specific location
+and also know when I am in or enter a location
+SO THAT  : I know what weather gear I should take in my travel
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5 :
+NAME     : Settings and configuration
+OWNER    : 
+PRIORITY : low
+ESTIMATE : 
+AS A     : 
+I WANT   : To be able to change location, add/delete a locations, change
+notification distance
+SO THAT  : Modify the app to my liking
+--------------------------------------------------------------------------
