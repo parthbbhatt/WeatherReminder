@@ -2,31 +2,31 @@ GOAL: Creating an app which reminds the user to either take a jacket, sweater, u
 they leave their house.
 
 UI:
-    Colour scheme:
-    Font style:
-    Navigation pages(Home, map, settings, etc.):
-    
+    Colour scheme: Blue, white(fonts), Grey
+    Font style: Lato font
+    Navigation pages(Home, map, settings, etc.): Weather, Maps, Settings
+
 Functionality:
-    How many locations can it track:
+    How many locations can it track: 10
     Reliable weather api:
-    Maps api:
-    Distance from the home location to get a notification:
+    Maps api: Google maps api
+    Distance from the home location to get a notification: 70m
 
 
 FAQS:
 
-- How many locations can a user have?
+- How many locations can a user have? 10
   - Do we want to allow them to add as many as they want or a specific number?
     - If its a specific number, do what is it and would it be more efficient to
-      save those locations in a variable or an array?
+      save those locations in a variable or an array? Array
 
-- Do we want the user to be allowed to change the notification radius?
-   - If so, what is the min and max radius?
+- Do we want the user to be allowed to change the notification radius? Yes
+   - If so, what is the min and max radius? Min: 20m  Max: 500m
 
-- For the weather forecast screen, how many locations of weathers do we want them to see?
+- For the weather forecast screen, how many locations of weathers do we want them to see? Only show weather for saved locations
   - Can they search the location and get the weather of it or just show the forecast of the
-    the ones they saved from the google maps?
+    the ones they saved from the google maps? No searching
 
-- Do we want to add a unique load screen when we start the app?
+- Do we want to add a unique load screen when we start the app? Yes
 
     
