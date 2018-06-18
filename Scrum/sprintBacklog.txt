@@ -11,8 +11,8 @@ SO THAT  : I can navigate efficiently utilize the app
 --------------------------------------------------------------------------
 TYPE     : USER STORY 2 :
 NAME     : Implement Google maps api and add a location saver
-OWNER    : 
-PRIORITY : 
+OWNER    : Parth
+PRIORITY : High
 ESTIMATE : 
 AS A     : user
 I WANT   : To select a location
@@ -22,8 +22,8 @@ the weather forecast a few hours in advance.
 --------------------------------------------------------------------------
 TYPE     : USER STORY 3 :
 NAME     : Implement weather forecast api
-OWNER    : 
-PRIORITY : 
+OWNER    : Stanley
+PRIORITY : Medium
 ESTIMATE : 
 AS A     : user
 I WANT   : To be able to have access of the full weather forecast
@@ -33,8 +33,8 @@ day, week, and month
 --------------------------------------------------------------------------
 TYPE     : USER STORY 4 :
 NAME     : Extract weather data and notify the user when outside the radius
-OWNER    : 
-PRIORITY : 
+OWNER    : Anthony
+PRIORITY : High
 ESTIMATE : 
 AS A     : user
 I WANT   : To be notified of the weather when I leave a specific location
@@ -44,7 +44,7 @@ SO THAT  : I know what weather gear I should take in my travel
 --------------------------------------------------------------------------
 TYPE     : USER STORY 5 :
 NAME     : Settings and configuration
-OWNER    : 
+OWNER    : Anthony
 PRIORITY : Low
 ESTIMATE : 
 AS A     : 
@@ -53,9 +53,9 @@ notification distance
 SO THAT  : Modify the app to my liking
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY 6 : Parth
+TYPE     : USER STORY 6 :
 NAME     : Load/Splash screen
-OWNER    :
+OWNER    : Parth
 PRIORITY : Low
 ESTIMATE :
 AS A     : Developer
@@ -63,3 +63,5 @@ I WANT   : To the user to wait at the load/splash screen until everything
 loads up
 SO THAT  : The user is not waiting on a blank screen
 --------------------------------------------------------------------------
+###################################################################################################
+# BUGS USER STORIES
