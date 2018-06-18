@@ -53,9 +53,9 @@ notification distance
 SO THAT  : Modify the app to my liking
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY 6 :
+TYPE     : USER STORY 6 : Parth
 NAME     : Load/Splash screen
-OWNER    : Parth
+OWNER    :
 PRIORITY : Low
 ESTIMATE :
 AS A     : Developer
@@ -64,4 +64,4 @@ loads up
 SO THAT  : The user is not waiting on a blank screen
 --------------------------------------------------------------------------
 ###################################################################################################
-# BUGS USER STORIES
+# BUGS USER STORY
