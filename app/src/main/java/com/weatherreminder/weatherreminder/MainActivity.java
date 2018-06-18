@@ -48,28 +48,28 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
-//    public boolean isServicesOk() {
-//        Log.d(TAG, "isServicesOK: checking google services version");
-//        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable
-//                (MainActivity.this);
-//
-//        if(available == ConnectionResult.SUCCESS) {
-//            // no errors detected so user can make requests
-//            Log.d(TAG, "isServicesOK: Google Play Services is working");
-//            return true;
-//
-//        } else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
-//            // detected an error but it is resolvable
-//            Log.d(TAG, "isServicesOK: error occurred but it is fixable");
-//            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog
-//                    (MainActivity.this, available, ERROR_DIALOG_REQUEST);
-//            dialog.show();
-//        } else {
-//            Toast.makeText(this, "Map requests cannot be made",
-//                    Toast.LENGTH_SHORT).show();
-//        }
-//
-//        return false;
-//    }
+    public boolean isServicesOk() {
+        Log.d(TAG, "isServicesOK: checking google services version");
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable
+                (MainActivity.this);
+
+        if(available == ConnectionResult.SUCCESS) {
+            // no errors detected so user can make requests
+            Log.d(TAG, "isServicesOK: Google Play Services is working");
+            return true;
+
+        } else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
+            // detected an error but it is resolvable
+            Log.d(TAG, "isServicesOK: error occurred but it is fixable");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog
+                    (MainActivity.this, available, ERROR_DIALOG_REQUEST);
+            dialog.show();
+        } else {
+            Toast.makeText(this, "Map requests cannot be made",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        return false;
+    }
 
 }
