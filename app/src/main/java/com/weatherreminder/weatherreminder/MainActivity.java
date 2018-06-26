@@ -1,6 +1,7 @@
 package com.weatherreminder.weatherreminder;
 
 import android.app.Dialog;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -28,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_weather);
                     return true;
                 case R.id.navigation_map:
-                    mTextMessage.setText(R.string.title_map);
+                    MapsFragment map = new MapsFragment();
+                    android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+                    manager.beginTransaction().replace(R.id.mapLayout, map).commit();
+
                     return true;
                 case R.id.navigation_settings:
                     mTextMessage.setText(R.string.title_settings);
@@ -48,28 +52,28 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
-    public boolean isServicesOk() {
-        Log.d(TAG, "isServicesOK: checking google services version");
-        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable
-                (MainActivity.this);
-
-        if(available == ConnectionResult.SUCCESS) {
-            // no errors detected so user can make requests
-            Log.d(TAG, "isServicesOK: Google Play Services is working");
-            return true;
-
-        } else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
-            // detected an error but it is resolvable
-            Log.d(TAG, "isServicesOK: error occurred but it is fixable");
-            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog
-                    (MainActivity.this, available, ERROR_DIALOG_REQUEST);
-            dialog.show();
-        } else {
-            Toast.makeText(this, "Map requests cannot be made",
-                    Toast.LENGTH_SHORT).show();
-        }
-
-        return false;
-    }
+//    public boolean isServicesOk() {
+//        Log.d(TAG, "isServicesOK: checking google services version");
+//        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable
+//                (MainActivity.this);
+//
+//        if(available == ConnectionResult.SUCCESS) {
+//            // no errors detected so user can make requests
+//            Log.d(TAG, "isServicesOK: Google Play Services is working");
+//            return true;
+//
+//        } else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
+//            // detected an error but it is resolvable
+//            Log.d(TAG, "isServicesOK: error occurred but it is fixable");
+//            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog
+//                    (MainActivity.this, available, ERROR_DIALOG_REQUEST);
+//            dialog.show();
+//        } else {
+//            Toast.makeText(this, "Map requests cannot be made",
+//                    Toast.LENGTH_SHORT).show();
+//        }
+//
+//        return false;
+//    }
 
 }

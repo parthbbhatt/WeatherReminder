@@ -63,5 +63,29 @@ I WANT   : To the user to wait at the load/splash screen until everything
 loads up
 SO THAT  : The user is not waiting on a blank screen
 --------------------------------------------------------------------------
+
 ###################################################################################################
 # BUGS USER STORY
+
+--------------------------------------------------------------------------
+TYPE     : BUG 1 :
+NAME     : Show Google Maps
+OWNER    :
+PRIORITY : High
+ESTIMATE :
+AS A     : User
+I WANT   : To see the google maps and not just a blank screen with the
+google logo
+SO THAT  : I am able to navigate around the map and save locations
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2 :
+NAME     : Stable app
+OWNER    :
+PRIORITY : High
+ESTIMATE :
+AS A     : User
+I WANT   : The app to be stable
+SO THAT  : I am able to navigate to different tabs in the navigation
+dock without it crashing
+--------------------------------------------------------------------------
